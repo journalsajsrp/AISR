@@ -3,48 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>منصة AISRP</title>
-    <link rel="stylesheet" href="style.css">
+    <title>المجلة العربية للعلوم ونشر الأبحاث - AISRP</title>
+    <!-- استدعاء خط القاهرة الاحترافي من جوجل -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="logo">AISRP</div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#home">الرئيسية</a></li>
-                <li><a href="#services">الخدمات</a></li>
-                <li><a href="#about">عن المنصة</a></li>
-            </ul>
-        </nav>
+    <!-- الشريط العلوي للمعلومات -->
+    <div class="top-bar">
+        <div class="container top-bar-flex">
+            <span>مرحباً بكم في المجلة العربية للعلوم ونشر الأبحاث (AISRP)</span>
+            <span>تواصل معنا: info@aisrp.com</span>
+        </div>
+    </div>
+
+    <!-- الهيدر الرئيسي والشعار المحدث -->
+    <header class="main-header">
+        <div class="container header-flex">
+            <!-- قسم الشعار المعتمد على الصورة المحددة -->
+            <div class="logo-container">
+                <a href="#">
+                    <img src="./pageHeaderTitleImage_ar.png" alt="شعار المجلة العربية للعلوم ونشر الأبحاث AISRP" class="site-logo">
+                </a>
+            </div>
+            <!-- قائمة التنقل -->
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#" class="active">الرئيسية</a></li>
+                    <li><a href="#">المجلات العلمية</a></li>
+                    <li><a href="#">قواعد النشر</a></li>
+                    <li><a href="#">أرسل بحثك</a></li>
+                    <li><a href="#">اتصل بنا</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main class="hero" id="home">
-        <div class="hero-content">
-            <h1>مرحباً بك في منصة AISRP</h1>
-            <p>حلول ذكية، مبتكرة، وسهلة الاستخدام لكل أجهزتك.</p>
-            <button class="btn-primary" onclick="showAlert()">ابدأ الآن</button>
-        </div>
-    </main>
-
-    <section class="services" id="services">
-        <h2>خدماتنا</h2>
-        <div class="card-container">
-            <div class="card">
-                <h3>الخدمة الأولى</h3>
-                <p>وصف مختصر للخدمة الذكية التي تقدمها المنصة.</p>
-            </div>
-            <div class="card">
-                <h3>الخدمة الثانية</h3>
-                <p>تصميم متجاوب وسريع يناسب كافة الاحتياجات.</p>
+    <!-- قسم الترحيب الرئيسي (Hero Section) -->
+    <section class="hero-section">
+        <div class="container">
+            <h2>المنصة الرائدة لنشر الأبحاث والدراسات العلمية المحكّمة</h2>
+            <p>نساهم في إثراء المحتوى العلمي العربي ونشر الأبحاث المتميزة وفق أعلى المعايير الأكاديمية العالمية.</p>
+            <div class="hero-buttons">
+                <a href="#" class="btn btn-primary">تصفح مجلاتنا</a>
+                <a href="#" class="btn btn-secondary">تقديم طلب نشر بحث</a>
             </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2026 جميع الحقوق محفوظة لمنصة AISRP</p>
+    <!-- قسم شبكة المجلات والخدمات المتجاوب -->
+    <section class="journals-section">
+        <div class="container">
+            <h3 class="section-title">المجلات العلمية المحكمة الصادرة عن المنصة</h3>
+            <div class="grid-container">
+                
+                <div class="journal-card">
+                    <div class="card-icon">📚</div>
+                    <h4>مجلة العلوم الإنسانية والاجتماعية</h4>
+                    <p>مجلة علمية محكمة تصدر شهرياً لنشر الأبحاث والدراسات الأصيلة في كافة مجالات العلوم الإنسانية.</p>
+                    <a href="#" class="card-link">تصفح أعداد المجلة ←</a>
+                </div>
+
+                <div class="journal-card">
+                    <div class="card-icon">🔬</div>
+                    <h4>مجلة العلوم الطبيعية والحياتية والتطبيقية</h4>
+                    <p>تختص بنشر الأبحاث الورقية والميدانية المبتكرة في مجالات العلوم الأساسية والتطبيقية المختلفة.</p>
+                    <a href="#" class="card-link">تصفح أعداد المجلة ←</a>
+                </div>
+
+                <div class="journal-card">
+                    <div class="card-icon">⚖️</div>
+                    <h4>مجلة العلوم القانونية والسياسية</h4>
+                    <p>منصة علمية دورية لنشر البحوث القانونية والدراسات السياسية والتشريعية المقارنة.</p>
+                    <a href="#" class="card-link">تصفح أعداد المجلة ←</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- الفوتر (تذييل الصفحة الأنيق والرسمي) -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 جميع الحقوق محفوظة للمجلة العربية للعلوم ونشر الأبحاث (AISRP).</p>
+        </div>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
