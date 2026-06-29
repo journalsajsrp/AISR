@@ -3,165 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اسم المجلة العلمية - عن المجلة</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        body {
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        /* الهيدر العلوي */
-        header {
-            background-color: #004466;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 4px solid #002233;
-        }
-
-        header h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        /* الحاوية الرئيسية (شاشة اللابتوب تقسمها لعمودين) */
-        .container {
-            display: flex;
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 0 15px;
-            gap: 20px;
-        }
-
-        /* القائمة الجانبية */
-        aside {
-            flex: 1;
-            background: white;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            height: fit-content;
-        }
-
-        aside img {
-            width: 100%;
-            max-width: 200px;
-            display: block;
-            margin: 0 auto 15px;
-            border: 1px solid #ddd;
-        }
-
-        .side-menu {
-            list-style: none;
-        }
-
-        .side-menu li a {
-            display: block;
-            padding: 10px;
-            color: #004466;
-            text-decoration: none;
-            border-bottom: 1px solid #eee;
-            font-weight: bold;
-        }
-
-        .side-menu li a:hover {
-            background-color: #f0f7fa;
-        }
-
-        /* منطقة المحتوى الرئيسية */
-        main {
-            flex: 3;
-            background: white;
-            padding: 30px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        main h2 {
-            color: #004466;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #004466;
-            padding-bottom: 10px;
-        }
-
-        main p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-
-        /* الفوتر (أسفل الموقع) */
-        footer {
-            background-color: #222;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            margin-top: 4px;
-            font-size: 14px;
-        }
-
-        /* التجاوب مع الهواتف الذكية */
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column; /* تحويل الأعمدة إلى صفوف فوق بعضها */
-            }
-            
-            aside {
-                order: 2; /* جعل القائمة الجانبية تظهر أسفل المحتوى في الهاتف */
-            }
-            
-            main {
-                order: 1;
-            }
-        }
-    </style>
+    <title>منصة AISRP</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>المجلة العربية للعلوم ونشر الأبحاث</h1>
-        <p>منصة النشر العلمي الإلكتروني المفتوح</p>
+    <header class="navbar">
+        <div class="logo">AISRP</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#services">الخدمات</a></li>
+                <li><a href="#about">عن المنصة</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="container">
-        
-        <!-- المحتوى الرئيسي (عن المجلة) -->
-        <main>
-            <h2>عن المجلة</h2>
-            <p>هنا يمكنك كتابة الوصف الخاص بمجلتك العلمية. هذا النص تجريبي ويمكنك استبداله بالكامل بما يناسب متطلباتك العلمي والبحثية.</p>
-            <p>تأسست هذه المجلة لتكون منبراً للباحثين العرب لنشر أبحاثهم المبتكرة في مختلف التخصصات العلمية والأدبية وفق أعلى معايير التحكيم الدولية.</p>
-            
-            <h3 style="color: #004466; margin: 20px 0 10px;">أهداف المجلة</h3>
-            <p>1. نشر البحوث الأصيلة والمبتكرة للباحثين.</p>
-            <p>2. تطوير حركة البحث العلمي في العالم العربي.</p>
-        </main>
+    <main class="hero" id="home">
+        <div class="hero-content">
+            <h1>مرحباً بك في منصة AISRP</h1>
+            <p>حلول ذكية، مبتكرة، وسهلة الاستخدام لكل أجهزتك.</p>
+            <button class="btn-primary" onclick="showAlert()">ابدأ الآن</button>
+        </div>
+    </main>
 
-        <!-- القائمة الجانبية وصورة غلاف المجلة -->
-        <aside>
-            <!-- استبدل الرابط أدناه برابط صورة غلاف مجلتك -->
-            <img src="https://via.placeholder.com/200x260?text=Cover" alt="غلاف المجلة">
-            
-            <ul class="side-menu">
-                <li><a href="#">الرئيسية</a></li>
-                <li><a href="#">عن المجلة</a></li>
-                <li><a href="#">أرشيف الأعداد</a></li>
-                <li><a href="#">قواعد النشر</a></li>
-                <li><a href="#">اتصل بنا</a></li>
-            </ul>
-        </aside>
-
-    </div>
+    <section class="services" id="services">
+        <h2>خدماتنا</h2>
+        <div class="card-container">
+            <div class="card">
+                <h3>الخدمة الأولى</h3>
+                <p>وصف مختصر للخدمة الذكية التي تقدمها المنصة.</p>
+            </div>
+            <div class="card">
+                <h3>الخدمة الثانية</h3>
+                <p>تصميم متجاوب وسريع يناسب كافة الاحتياجات.</p>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p>جميع الحقوق محفوظة © 2026 | اسم المجلة</p>
+        <p>&copy; 2026 جميع الحقوق محفوظة لمنصة AISRP</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
