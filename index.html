@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>المؤسسة الدولية للنشر العلمي | ISPF</title>
-    <!-- استدعاء خط القاهرة الأكاديمي -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
 
-    <!-- الشريط العلوي للمعلومات والتواصل السريع -->
+    <!-- الشريط العلوي -->
     <div class="top-bar">
         <div class="container top-bar-flex">
             <span>المؤسسة الدولية للنشر العلمي (ISPF)</span>
@@ -21,35 +20,57 @@
         </div>
     </div>
 
-    <!-- الهيدر الرئيسي والشعار المعتمد -->
+    <!-- الهيدر مع قائمة الهامبرغر على اليمين -->
     <header class="main-header">
         <div class="container header-flex">
+            
+            <!-- زر الهامبرغر متموضع على اليمين -->
+            <button class="hamburger-menu" onclick="toggleMenu()" aria-label="قائمة التنقل">
+                ☰
+            </button>
+
+            <!-- الشعار والمسمى -->
             <div class="logo-container">
                 <a href="#">
                     <img src="./pageHeaderTitleImage_ar.png" alt="المؤسسة الدولية للنشر العلمي" class="site-logo">
                 </a>
             </div>
-            <nav class="navbar">
+
+            <!-- القائمة الجانبية المنسدلة -->
+            <nav class="navbar" id="sidebarMenu">
                 <ul class="nav-links">
-                    <li><a href="#" class="active">الرئيسية</a></li>
-                    <li><a href="#about">من نحن</a></li>
-                    <li><a href="#scopus">النشر في سكوباس</a></li>
-                    <li><a href="#team">الإدارة وفريق العمل</a></li>
-                    <li><a href="#contact">اتصل بنا</a></li>
+                    <li><a href="#" class="active" onclick="toggleMenu()">الرئيسية</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">من نحن</a></li>
+                    <li><a href="#scopus" onclick="toggleMenu()">النشر في سكوباس</a></li>
+                    <li><a href="#team" onclick="toggleMenu()">الإدارة وفريق العمل</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">اتصل بنا</a></li>
+                    <li><a href="#" class="btn-login" onclick="alert('خاص بالمشرفين: الرجاء إدخال بيانات الدخول الممنوحة لك.')">تسجيل الدخول</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <!-- نافذة إعلاناتنا اليومية تحت الشعار مباشرة -->
+    <section class="ads-section">
+        <div class="container">
+            <div class="ads-box">
+                <div class="ads-badge">📢 إعلاناتنا اليومية</div>
+                <div class="ads-ticker">
+                    <p>✨ بدء استقبال الأبحاث والأوراق العلمية للنشر في المجلات المدرجة ضمن قواعد بيانات Scopus و Clarivate لشهري يوليو وأغسطس 2026.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- قسم الترحيب الرئيسي (Hero Section) -->
     <section class="hero-section">
         <div class="container">
             <h2>المؤسسة الدولية للنشر العلمي</h2>
             <p class="en-sub">International Scientific Publishing Foundation</p>
-            <p class="hero-desc">مؤسسة بحثية أكاديمية متخصصة، نعمل بشكل إلكتروني على نطاق واسع لمساعدة الباحثين وطلبة الدراسات العليا في نشر بحوثهم في أرقى المجلات العالمية لجميع الاختصاصات، وخاصة مجلات (سكوباس وكلاريفيت).</p>
+            <p class="hero-desc">مؤسسة بحثية أكاديمية متخصصة، نعمل بشكل إلكتروني على نطاق واسع لمساعدة الباحثين وطلبة الدراسات العليا في نشر بحوثهم في أرقى المجلات العالمية لجميع الاختصاصات.</p>
             <div class="hero-buttons">
-                <a href="https://wa.me/970599239760" target="_blank" class="btn btn-primary">تواصل معنا عبر واتساب</a>
-                <a href="#scopus" class="btn btn-secondary">شروط النشر في سكوباس</a>
+                <a href="#" class="btn btn-primary" onclick="alert('خاص بالمشرفين: الرجاء إدخال بيانات الدخول الممنوحة لك.')">بوابة تسجيل الدخول</a>
+                <a href="https://wa.me/970599239760" target="_blank" class="btn btn-secondary">تواصل عبر واتساب</a>
             </div>
         </div>
     </section>
@@ -58,20 +79,16 @@
     <section class="about-section" id="about">
         <div class="container">
             <div class="about-grid">
-                
                 <div class="about-box">
                     <h3>🎯 هدفنا ورؤيتنا</h3>
-                    <p>نهدف للمساهمة بالنشر العلمي في جميع الاختصاصات لتعزيز البحث العلمي والكتابة الأكاديمية. وسعياً لتحقيق هذا الهدف تشترط المؤسسة حداثة الموضوعات البحثية، وخلوها من السرقات العلمية، والأخطاء اللغوية، والتزام البحث أو الورقة العلمية بالشكل العلمي.</p>
+                    <p>نهدف للمساهمة بالنشر العلمي في جميع الاختصاصات لتعزيز البحث العلمي والكتابة الأكاديمية. وسعياً لتحقيق هذا الهدف تشترط المؤسسة حداثة الموضوعات البحثية، وخلوها من السرقات العلمية، والأخطاء اللغوية.</p>
                 </div>
-
                 <div class="about-box">
                     <h3>📜 النشأة والتأسيس</h3>
-                    <p>أنشئت المؤسسة عبر الإنترنت عام 2016م. ومن خلال سنوات عملها، أثبتت حضوراً بارزاً في تحكيم المؤلفات والنشر العلمي في العالم والوطن العربي من خلال مجموعة من المجلات العلميّة المحكّمة والمتخصصة والمعتمدة دولياً والمدرجة في (سكوباس وكلاريفيت)، ومرخصة من شركة ISSN الدولية في باريس.</p>
+                    <p>أنشئت المؤسسة عبر الإنترنت عام 2016م. ومن خلال سنوات عملها، أثبتت حضوراً بارزاً في تحكيم المؤلفات والنشر العلمي في العالم والوطن العربي من خلال مجموعة من المجلات العلميّة المحكّمة المعتمدة دولياً.</p>
                 </div>
-
             </div>
 
-            <!-- توجهات المؤسسة ومهامها -->
             <div class="features-grid">
                 <div class="feature-card">
                     <h4>🧭 توجهات المؤسسة الرئيسة</h4>
@@ -82,37 +99,51 @@
                         <li>الاستفادة على وجه الخصوص من المؤتمرات العلمية للباحثين.</li>
                     </ul>
                 </div>
-
                 <div class="feature-card">
                     <h4>🛠️ مهام المؤسسة</h4>
-                    <p>تقوم المؤسسة بنشر الأبحاث في جميع الاختصاصات وفهرستها، وهي مؤسسة أكاديمية تُقدِّم خدمات البحث العلمي عبر مجموعة متميّزة من المجلات العلمية المُحكَّمة، ويُشرف عليها كادر من العلماء والأكاديميين من مختلف الجامعات حول العالم.</p>
+                    <p>تقوم المؤسسة بنشر الأبحاث في جميع الاختصاصات وفهرستها، وهي مؤسسة أكاديمية تُقدِّم خدمات البحث العلمي عبر مجموعة متميّزة من المجلات العلمية المُحكَّمة، ويُشرف عليها كادر من العلماء والأكاديميين.</p>
                 </div>
             </div>
-
         </div>
     </section>
 
-    <!-- قسم النشر في سكوباس وقواعد البيانات -->
+    <!-- قسم النشر في سكوباس والتوزيع الجغرافي للشعارات من 1 إلى 4 -->
     <section class="scopus-section" id="scopus">
         <div class="container">
             <h2 class="section-title">✨ النشر في سكوباس (Scopus)</h2>
-            <p class="scopus-intro"><strong>ما هي سكوباس؟</strong> قاعدة بيانات عالمية ضخمة تديرها شركة "إلسفير" (Elsevier) الهولندية، تضم آلاف المجلات العلمية المُحكّمة والمؤتمرات وتُعد المعيار الأساسي لتقييم جودة الأبحاث، واعتماد المجلات للترقيات الأكاديمية، وتصنيف الجامعات.</p>
+            <p class="scopus-intro"><strong>ما هي سكوباس؟</strong> قاعدة بيانات عالمية ضخمة تضم آلاف المجلات العلمية المُحكّمة وتُعد المعيار الأساسي لتقييم جودة الأبحاث، واعتماد المجلات للترقيات الأكاديمية.</p>
 
             <h3 class="sub-title">📊 مستويات المجلات في سكوبس (معاملات التأثير)</h3>
             <div class="quartiles-grid">
-                <div class="q-box q1"><h4>Q1 (الربع الأول)</h4><p>المجلات الأعلى تأثيراً والأكثر استشهاداً.</p></div>
-                <div class="q-box q2"><h4>Q2 (الربع الثاني)</h4><p>مجلات قوية ذات جودة وموثوقية عالية.</p></div>
-                <div class="q-box q3"><h4>Q3 (الربع الثالث)</h4><p>مجلات متوسطة التأثير، تعتبر نقطة انطلاق مناسبة.</p></div>
-                <div class="q-box q4"><h4>Q4 (الربع الرابع)</h4><p>المجلات الأحدث أو الأقل تأثيراً، وتتميز بقبول أسهل.</p></div>
+                <div class="q-box q1">
+                    <img src="./Logo 1.jpeg" alt="Logo 1" class="q-logo">
+                    <h4>Q1 (الربع الأول)</h4>
+                    <p>المجلات الأعلى تأثيراً والأكثر استشهاداً.</p>
+                </div>
+                <div class="q-box q2">
+                    <img src="./Logo 2.jpeg" alt="Logo 2" class="q-logo">
+                    <h4>Q2 (الربع الثاني)</h4>
+                    <p>مجلات قوية ذات جودة وموثوقية عالية.</p>
+                </div>
+                <div class="q-box q3">
+                    <img src="./Logo 3.jpeg" alt="Logo 3" class="q-logo">
+                    <h4>Q3 (الربع الثالث)</h4>
+                    <p>مجلات متوسطة التأثير، تعتبر نقطة انطلاق مناسبة.</p>
+                </div>
+                <div class="q-box q4">
+                    <img src="./Logo 4.jpeg" alt="Logo 4" class="q-logo">
+                    <h4>Q4 (الربع الرابع)</h4>
+                    <p>المجلات الأحدث أو الأقل تأثيراً، وتتميز بقبول أسهل.</p>
+                </div>
             </div>
 
             <div class="conditions-box">
                 <h3>📋 شروط النشر لضمان قبول بحثك</h3>
                 <div class="cond-grid">
                     <div class="cond-item"><strong>1. الأصالة:</strong> أن يقدم البحث إضافة جديدة ولم يسبق نشره.</div>
-                    <div class="cond-item"><strong>2. الارتباط:</strong> أن يقع موضوع البحث ضمن دائرة اهتمام المجلة المستهدفة.</div>
-                    <div class="cond-item"><strong>3. الدقة المنهجية:</strong> وضوح الأهداف، سلامة الإطار النظري، وجودة الفرضيات والأدوات.</div>
-                    <div class="cond-item"><strong>4. اللغة:</strong> تُنشر الأبحاث بشكل أساسي بالإنجليزية، وتقل فرص المجلات العربية ما لم تقدم ملخصات بالإنجليزية.</div>
+                    <div class="cond-item"><strong>2. الارتباط:</strong> أن يقع موضوع البحث ضمن دائرة اهتمام المجلة.</div>
+                    <div class="cond-item"><strong>3. الدقة المنهجية:</strong> وضوح الأهداف، وسلامة الإطار النظري والفرضيات.</div>
+                    <div class="cond-item"><strong>4. اللغة:</strong> تُنشر الأبحاث بشكل أساسي بالإنجليزية لضمان معايير الفهرسة.</div>
                 </div>
             </div>
         </div>
@@ -122,7 +153,7 @@
     <section class="team-section" id="team">
         <div class="container">
             <h2 class="section-title">👥 إدارة المؤسسة وفريق العمل</h2>
-            <p class="team-intro">تشتمل المؤسسة على فريق عمل أكاديمي متخصص في النشر العلمي لتحقيق أهداف المؤسسة ورغبة الباحثين، باعتبارهم حضناً أساسياً لخدمتكم ونشر بحوثكم العلمية.</p>
+            <p class="team-intro">تشتمل المؤسسة على فريق عمل أكاديمي متخصص في النشر العلمي لتحقيق أهداف المؤسسة ورغبة الباحثين.</p>
             
             <div class="team-grid">
                 <div class="member-card leader">
@@ -164,7 +195,20 @@
         </div>
     </section>
 
-    <!-- قسم التواصل المخصص والسريع (Contact Us) -->
+    <!-- قسم توزيع باقي الشعارات من 5 إلى 8 (شركاء النجاح والمؤسسات المعتمدة) -->
+    <section class="partners-section">
+        <div class="container">
+            <h3 class="sub-title">🤝 الاعتمادات والروابط الدولية للمؤسسة</h3>
+            <div class="partners-grid">
+                <div class="partner-item"><img src="./Logo 5.jpeg" alt="Logo 5"></div>
+                <div class="partner-item"><img src="./Logo 6.jpeg" alt="Logo 6"></div>
+                <div class="partner-item"><img src="./Logo 7.jpeg" alt="Logo 7"></div>
+                <div class="partner-item"><img src="./Logo 8.jpeg" alt="Logo 8"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التواصل السريع -->
     <section class="contact-section" id="contact">
         <div class="container">
             <h2 class="section-title">📞 تواصل معنا الآن</h2>
@@ -184,12 +228,13 @@
         </div>
     </section>
 
-    <!-- الفوتر الرسمي -->
+    <!-- الفوتر -->
     <footer class="main-footer">
         <div class="container">
             <p>&copy; 2026 جميع الحقوق محفوظة للمؤسسة الدولية للنشر العلمي (ISPF).</p>
         </div>
     </footer>
 
+    <script src="./script.js"></script>
 </body>
 </html>
