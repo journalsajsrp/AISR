@@ -1,38 +1,36 @@
-/* تكبير كروت مستويات سكوباس لتصبح ضخمة وواضحة جداً */
+/* إعادة كروت مستويات سكوباس لأبعادها الأصلية المستقرة */
 .quartiles-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* زيادة الحد الأدنى لعرض الكارت */
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
     margin-top: 20px;
 }
 
 .q-box { 
-    padding: 45px 30px; /* زيادة الحشوة الداخلية لتكبير المربع عمودياً وأفقياً */
+    padding: 25px; /* الحشوة الأصلية المتناسقة لحماية بقية الموقع */
     text-align: center; 
-    border-radius: 14px; 
+    border-radius: 8px; 
     color: white; 
     display: flex; 
     flex-direction: column; 
     align-items: center; 
-    gap: 20px; 
-    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
-    transition: transform 0.3s ease;
+    gap: 15px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.01);
 }
 
-.q-box:hover {
-    transform: translateY(-5px); /* حركة تفاعلية خفيفة عند تمرير الماوس */
-}
-
-/* إصلاح حجم الشعار وإلغاء كود الفلتر المسبب للاختفاء */
+/* تكبير الصور داخل المربعات فقط وإظهار المختفي منها */
 .q-logo { 
-    height: 90px; /* تكبير حجم الصورة لتظهر بوضوح فخم */
+    height: 85px; /* تكبير دقيق وواضح للصور داخل المربع */
     width: auto; 
+    max-width: 90%;
     object-fit: contain;
-    border-radius: 6px;
-    background-color: transparent; /* إزالة أي فلاتر حجب ألوان */
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    filter: none !important; /* إلغاء الفلتر تماماً لإظهار الصور المختفية في Q1 و Q2 */
 }
 
-/* الألوان المتطابقة مع الصورة المرفقة للمربعات */
+/* الألوان الثابتة للمربعات */
 .q1 { background-color: #0284c7; }
 .q2 { background-color: #0ea5e9; }
 .q3 { background-color: #38bdf8; color: var(--academic-dark); }
