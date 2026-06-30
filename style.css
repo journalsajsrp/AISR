@@ -219,11 +219,13 @@ body {
     gap: 18px; 
     box-shadow: 0 6px 18px rgba(0,0,0,0.04);
 }
+/* كود خاص بتكبير وإصلاح الصور داخل مربعات سكوباس فقط */
 .q-logo { 
-    height: 75px; /* تكبير حجم الصور والشعارات لتصبح واضحة جداً */
-    width: auto; 
-    object-fit: contain;
-    filter: brightness(0) invert(1); /* جعلها تتلاءم مع الخلفيات الملونة */
+    height: 100px !important;   /* يمكنك زيادة هذا الرقم (مثلاً 110px أو 120px) إذا أردتها أكبر */
+    width: auto !important; 
+    max-width: 95% !important;
+    object-fit: contain !important;
+    filter: none !important;    /* لإلغاء الفلتر الذي كان يخفي صورتي المربع الأول والثاني */
 }
 .q1 { background-color: #0284c7; }
 .q2 { background-color: #0ea5e9; }
