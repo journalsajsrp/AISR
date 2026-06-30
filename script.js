@@ -1,4 +1,5 @@
-// دالة بسيطة للتفاعل عند الضغط على الزر
-function showAlert() {
-    alert("أهلاً بك في منصة AISRP! تم تجهيز الموقع ليعمل بكفاءة على الجوال والكمبيوتر.");
+// دالة التحكم في فتح وإغلاق قائمة الهامبرغر المخصصة للهواتف
+function toggleMenu() {
+    const menu = document.getElementById("sidebarMenu");
+    menu.classList.toggle("show");
 }
