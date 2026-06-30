@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>المؤسسة الدولية للنشر العلمي | ISPF</title>
-    <!-- استدعاء أوزان خط القاهرة المتناسقة للعنوان والنصوص -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
@@ -21,23 +20,17 @@
         </div>
     </div>
 
-    <!-- الهيدر مع تفعيل زر الهامبرغر على اليمين والشعار -->
+    <!-- الهيدر الرئيسي -->
     <header class="main-header">
         <div class="container header-flex">
-            
-            <!-- زر الهامبرغر في مكانه الصحيح على اليمين -->
             <button class="hamburger-menu" onclick="toggleMenu()" aria-label="قائمة التنقل">
                 ☰ قائمة الموقع
             </button>
-
-            <!-- الشعار الرئيسي للموقع -->
             <div class="logo-container">
                 <a href="#">
                     <img src="./pageHeaderTitleImage_ar.png" alt="المؤسسة الدولية للنشر العلمي" class="site-logo">
                 </a>
             </div>
-
-            <!-- القائمة الجانبية التفاعلية -->
             <nav class="navbar" id="sidebarMenu">
                 <ul class="nav-links">
                     <li><a href="#" class="active" onclick="toggleMenu()">الرئيسية</a></li>
@@ -52,19 +45,7 @@
         </div>
     </header>
 
-    <!-- نافذة إعلاناتنا اليومية تحت الهيدر مباشرة -->
-    <section class="ads-section">
-        <div class="container">
-            <div class="ads-box">
-                <div class="ads-badge">📢 إعلاناتنا اليومية</div>
-                <div class="ads-ticker">
-                    <p>✨ بدء استقبال الأبحاث والأوراق العلمية للنشر في المجلات المدرجة ضمن قواعد بيانات Scopus و Clarivate لشهري يوليو وأغسطس 2026م.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- قسم الواجهة الرئيسية (Hero Section) -->
+    <!-- 1. الواجهة الرئيسية (Hero Section) -->
     <section class="hero-section">
         <div class="container">
             <h2>المؤسسة الدولية للنشر العلمي</h2>
@@ -77,7 +58,19 @@
         </div>
     </section>
 
-    <!-- قسم من نحن والنشأة والتوجهات -->
+    <!-- 2. نافذة إعلاناتنا اليومية (موقعها الجديد: أسفل الرئيسية وقبل من نحن) -->
+    <section class="ads-section">
+        <div class="container">
+            <div class="ads-box">
+                <div class="ads-badge">📢 إعلاناتنا اليومية</div>
+                <div class="ads-ticker">
+                    <p>✨ بدء استقبال الأبحاث والأوراق العلمية للنشر في المجلات المدرجة ضمن قواعد بيانات Scopus و Clarivate لشهري يوليو وأغسطس 2026م.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. قسم من نحن والنشأة والتوجهات -->
     <section class="about-section" id="about">
         <div class="container">
             <div class="about-grid">
@@ -109,23 +102,23 @@
         </div>
     </section>
 
-    <!-- قسم النشر في سكوباس وتحديث امتدادات الصور إلى jpeg وتكبير حجم الكروت والشعارات -->
+    <!-- قسم النشر في سكوباس (مع المربعات الكبيرة وإصلاح الصور تماماً مثل image_488cb2.png) -->
     <section class="scopus-section" id="scopus">
         <div class="container">
             <h2 class="section-title">✨ النشر في سكوباس (Scopus)</h2>
-            <p class="scopus-intro"><strong>ما هي سكوباس?</strong> قاعدة بيانات عالمية ضخمة تضم آلاف المجلات العلمية المُحكّمة وتُعد المعيار الأساسي لتقييم جودة الأبحاث، واعتماد المجلات للترقيات الأكاديمية.</p>
+            <p class="scopus-intro"><strong>ما هي سكوباس؟</strong> قاعدة بيانات عالمية ضخمة تضم آلاف المجلات العلمية المُحكّمة وتُعد المعيار الأساسي لتقييم جودة الأبحاث، واعتماد المجلات للترقيات الأكاديمية.</p>
 
-            <h3 class="sub-title">📊 مستويات المجلات في سكوبس وتصنيفاتها المعفية</h3>
+            <h3 class="sub-title">📊 مستويات المجلات في سكوبس (معاملات التأثير)</h3>
             <div class="quartiles-grid">
                 <div class="q-box q1">
                     <img src="./Logo 1.jpeg" alt="Logo 1" class="q-logo">
                     <h4>Q1 (الربع الأول)</h4>
-                    <p>المجلات الأعلى تأثيراً والأكثر استشهاداً أكاديمياً.</p>
+                    <p>المجلات الأعلى تأثيراً والأكثر استشهاداً.</p>
                 </div>
                 <div class="q-box q2">
                     <img src="./Logo 2.jpeg" alt="Logo 2" class="q-logo">
                     <h4>Q2 (الربع الثاني)</h4>
-                    <p>مجلات قوية ذات جودة وموثوقية عالية جداً.</p>
+                    <p>مجلات قوية ذات جودة وموثوقية عالية.</p>
                 </div>
                 <div class="q-box q3">
                     <img src="./Logo 3.jpeg" alt="Logo 3" class="q-logo">
@@ -135,17 +128,17 @@
                 <div class="q-box q4">
                     <img src="./Logo 4.jpeg" alt="Logo 4" class="q-logo">
                     <h4>Q4 (الربع الرابع)</h4>
-                    <p>المجلات الأحدث في الفهرسة وتتميز بقبول مرن وسريع.</p>
+                    <p>المجلات الأحدث أو الأقل تأثيراً، وتتميز بقبول أسهل.</p>
                 </div>
             </div>
 
             <div class="conditions-box">
                 <h3>📋 شروط النشر لضمان قبول بحثك</h3>
                 <div class="cond-grid">
-                    <div class="cond-item"><strong>1. الأصالة:</strong> أن يقدم البحث إضافة جديدة ولم يسبق نشره بالكامل.</div>
-                    <div class="cond-item"><strong>2. الارتباط:</strong> أن يقع موضوع البحث ضمن دائرة اهتمام المجلة المستهدفة.</div>
-                    <div class="cond-item"><strong>3. الدقة المنهجية:</strong> وضوح الأهداف، وسلامة الإطار النظري والفرضيات البحثية.</div>
-                    <div class="cond-item"><strong>4. اللغة:</strong> تُنشر الأبحاث بشكل أساسي بالإنجليزية لضمان مطابقة المعايير العلمية.</div>
+                    <div class="cond-item"><strong>1. الأصالة:</strong> أن يقدم البحث إضافة جديدة ولم يسبق نشره.</div>
+                    <div class="cond-item"><strong>2. الارتباط:</strong> أن يقع موضوع البحث ضمن دائرة اهتمام المجلة.</div>
+                    <div class="cond-item"><strong>3. الدقة المنهجية:</strong> وضوح الأهداف، وسلامة الإطار النظري والفرضيات.</div>
+                    <div class="cond-item"><strong>4. اللغة:</strong> تُنشر الأبحاث بالإنجليزية لضمان مطابقة المعايير العلمية.</div>
                 </div>
             </div>
         </div>
@@ -156,7 +149,6 @@
         <div class="container">
             <h2 class="section-title">👥 إدارة المؤسسة وفريق العمل</h2>
             <p class="team-intro">تشتمل المؤسسة على فريق عمل أكاديمي متخصص في النشر العلمي لتحقيق أهداف المؤسسة ورغبة الباحثين.</p>
-            
             <div class="team-grid">
                 <div class="member-card leader">
                     <h4>د. بسام حسن مهرة</h4>
@@ -197,23 +189,19 @@
         </div>
     </section>
 
-    <!-- قسم الاعتمادات والروابط الدولية المحدث مع إضافة النصوص المحددة كاملاً وتحديث الشعارات 5-8 إلى jpeg مع تكبيرها -->
+    <!-- قسم الاعتمادات والروابط الدولية للمؤسسة -->
     <section class="partners-section" id="partners">
         <div class="container">
             <h2 class="section-title">🤝 الاعتمادات والروابط الدولية للمؤسسة</h2>
-            
-            <!-- إضافة نصوص الاعتمادات المطلوبة بشكل منظم ومنسق -->
             <div class="partners-text-box">
                 <div class="p-text-item">
                     <h5>💼 شراكات مؤسسية:</h5>
-                    <p>ترتبط سكوبس بشراكات مع آلاف الجامعات، والمؤسسات الأكاديمية، والوزارات، والمجالس البحثية حول العالم. تعتمد هذه المؤسسة على مؤشرات سكوبس (مثل CiteScore و h-index) كمعيار رئيسي في تصنيف الجامعات دولياً (مثل تصنيف QS) وتقييم جودة وترقية الباحثين.</p>
+                    <p>ترتبط سكوبس بشراكات مع آلاف الجامعات، والمؤسسات الأكاديمية، والوزارات، والمجالس البحثية حول العالم. تعتمد هذه المؤسسات على مؤشارات سكوبس (مثل CiteScore و h-index) كمعيار رئيسي في تصنيف الجامعات دولياً (مثل تصنيف QS) وتقييم جودة وترقية الباحثين.</p>
                 </div>
-                
                 <div class="p-text-item">
                     <h5>📜 الاعتماد الذاتي:</h5>
                     <p>تعتمد سكوبس نفسها كمرجع عالمي موثوق، وتُستخدم مقاييسها من قبل هيئات منح الدرجات العلمية ووكالات التمويل البحثي في عدد كبير من الدول.</p>
                 </div>
-
                 <div class="p-text-item">
                     <h5>💡 ربط براءات الاختراع:</h5>
                     <p>ترتبط سكوبس بقواعد بيانات براءات الاختراع الدولية لتعزيز البحث الشامل، مثل:</p>
@@ -226,7 +214,6 @@
                 </div>
             </div>
 
-            <!-- عرض الشعارات المتبقية بحجم مكبر ومناسب جداً بالتنسيق الجيد -->
             <div class="partners-grid">
                 <div class="partner-item"><img src="./Logo 5.jpeg" alt="Logo 5" class="large-partner-logo"></div>
                 <div class="partner-item"><img src="./Logo 6.jpeg" alt="Logo 6" class="large-partner-logo"></div>
@@ -236,11 +223,11 @@
         </div>
     </section>
 
-    <!-- قسم التواصل السريع المطور -->
+    <!-- قسم التواصل السريع -->
     <section class="contact-section" id="contact">
         <div class="container">
             <h2 class="section-title">📞 تواصل معنا الآن</h2>
-            <p class="contact-subtitle">يسعدنا استقبال مسودات أبحاثكم واستفساراتكم على مدار الساعة من خلال قنواتنا الرسمية</p>
+            <p class="contact-subtitle">يسعدنا استقبال مسودات أبحاثكم واستفساراتكم على مدار الساعة</p>
             <div class="contact-boxes">
                 <a href="https://wa.me/970599239760" target="_blank" class="c-box whatsapp">
                     <span class="icon">💬</span>
@@ -256,7 +243,6 @@
         </div>
     </section>
 
-    <!-- الفوتر الرسمي للموقع -->
     <footer class="main-footer">
         <div class="container">
             <p>&copy; 2026 جميع الحقوق محفوظة للمؤسسة الدولية للنشر العلمي (ISPF).</p>
