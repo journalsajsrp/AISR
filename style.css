@@ -86,7 +86,7 @@ body {
     order: 2;
 }
 .site-logo {
-    max-height: 70px; /* تكبير الشعار قليلاً لزيادة الوضوح والظهور */
+    max-height: 90px; /* تكبير الشعار قليلاً لزيادة الوضوح والظهور */
     width: auto;
     display: block;
 }
