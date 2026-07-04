@@ -21,26 +21,28 @@
     </div>
 
     <!-- الهيدر الرئيسي -->
-<header class="main-header">
-    <div class="container header-flex">
-        <button class="hamburger-menu" onclick="toggleMenu()" aria-label="قائمة التنقل">
-            ☰ قائمة الموقع
-        </button>
-        <div class="logo-container">
-            <a href="#">
-                <!-- تم تحديث اسم الصورة هنا لتطابق اسم ملفك الجديد تماماً -->
-                <img src="./pageHeaderTitleImage_ar.png"alt="المؤسسة الدولية للنشر العلمي" class="site-logo">
-            </a>
-        </div>
-        <nav class="navbar" id="sidebarMenu">
+    <header class="main-header">
+        <div class="container header-flex">
+            <button class="hamburger-menu" onclick="toggleMenu()" aria-label="قائمة التنقل">
+                ☰ قائمة الموقع
+            </button>
+            <div class="logo-container">
+                <a href="#">
+                    <!-- تم تحديث اسم الصورة هنا لتطابق اسم ملفك الجديد تماماً -->
+                    <img src="./pageHeaderTitleImage_ar.png" alt="المؤسسة الدولية للنشر العلمي" class="site-logo">
+                </a>
+            </div>
+            <nav class="navbar" id="sidebarMenu">
                 <ul class="nav-links">
                     <li><a href="#" class="active" onclick="toggleMenu()">الرئيسية</a></li>
                     <li><a href="#about" onclick="toggleMenu()">من نحن</a></li>
                     <li><a href="#scopus" onclick="toggleMenu()">النشر في سكوباس</a></li>
+                    <li><a href="#library" onclick="toggleMenu()">المكتبة الرقمية</a></li>
                     <li><a href="#team" onclick="toggleMenu()">الإدارة وفريق العمل</a></li>
                     <li><a href="#partners" onclick="toggleMenu()">الاعتمادات الدولية</a></li>
                     <li><a href="#contact" onclick="toggleMenu()">اتصل بنا</a></li>
-<li><a href="./login.html" class="btn-login">تسجيل الدخول</a></li>                </ul>
+                    <li><a href="./login.html" class="btn-login">تسجيل الدخول</a></li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -52,7 +54,8 @@
             <p class="en-sub">International Scientific Publishing Foundation</p>
             <p class="hero-desc">مؤسسة بحثية أكاديمية متخصصة، نعمل بشكل إلكتروني على نطاق واسع لمساعدة الباحثين وطلبة الدراسات العليا في نشر بحوثهم في أرقى المجلات العالمية لجميع الاختصاصات.</p>
             <div class="hero-buttons">
-<a href="./login.html" class="btn btn-primary">بوابة تسجيل الدخول</a>                <a href="https://wa.me/970599239760" target="_blank" class="btn btn-secondary">تواصل عبر واتساب</a>
+                <a href="./login.html" class="btn btn-primary">بوابة تسجيل الدخول</a>
+                <a href="https://wa.me/970599239760" target="_blank" class="btn btn-secondary">تواصل عبر واتساب</a>
             </div>
         </div>
     </section>
@@ -101,7 +104,7 @@
         </div>
     </section>
 
-    <!-- قسم النشر في سكوباس (مع المربعات الكبيرة وإصلاح الصور تماماً مثل image_488cb2.png) -->
+    <!-- قسم النشر في سكوباس -->
     <section class="scopus-section" id="scopus">
         <div class="container">
             <h2 class="section-title">✨ النشر في سكوباس (Scopus)</h2>
@@ -140,6 +143,19 @@
                     <div class="cond-item"><strong>4. اللغة:</strong> تُنشر الأبحاث بالإنجليزية لضمان مطابقة المعايير العلمية.</div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- 4. قسم المكتبة الرقمية المضاف حديثاً المرتبط برابط جوجل درايف العام للمدير والزوار -->
+    <section class="download-center-section" id="library">
+        <div class="container">
+            <h2 class="section-title">📚 المكتبة الرقمية ومركز تحميل الملفات</h2>
+            <p class="library-desc">
+                هنا تجدون أحدث المجلات العلمية المتاحة، شروط النشر المحدثة، الأدلة الأكاديمية، والنماذج المرفوعة مباشرة من الإدارة للتحميل المباشر.
+            </p>
+            <a href="https://drive.google.com/drive/folders/1HhS77RlgNc7ymuzaKCGSAu6IIm3qxuwm?usp=sharing" target="_blank" class="btn btn-download-center">
+                📂 فتح مركز التحميل واستعراض الملفات الآن
+            </a>
         </div>
     </section>
 
@@ -190,7 +206,7 @@
             <div class="partners-text-box">
                 <div class="p-text-item">
                     <h5>💼 شراكات مؤسسية:</h5>
-                    <p>ترتبط سكوبس بشراكات مع آلاف الجامعات، والمؤسسات الأكاديمية، والوزارات، والمجالس البحثية حول العالم. تعتمد هذه المؤسسات على مؤشارات سكوبس (مثل CiteScore و h-index) كمعيار رئيسي في تصنيف الجامعات دولياً (مثل تصنيف QS) وتقييم جودة وترقية الباحثين.</p>
+                    <p>ترتبط سكوبس بشراكات مع آلاف الجامعات، والمؤسسات الأكاديمية، والوزارات، والمجالس البحثية حول العالم. تعتمد هذه المؤسسات على مؤشرات سكوبس (مثل CiteScore و h-index) كمعيار رئيسي في تصنيف الجامعات دولياً (مثل تصنيف QS) وتقييم جودة وترقية الباحثين.</p>
                 </div>
                 <div class="p-text-item">
                     <h5>📜 الاعتماد الذاتي:</h5>
@@ -241,7 +257,7 @@
         <div class="container">
             <p>&copy; 2026 جميع الحقوق محفوظة للمؤسسة الدولية للنشر العلمي (ISPF).</p>
         </div>
-    </footer>
+    </footer
 
     <script src="./script.js"></script>
 </body>
