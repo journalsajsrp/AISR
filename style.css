@@ -29,7 +29,7 @@ body {
 }
 
 /* التمرير السلس وتأثير التفاعل الفخم مع الكروت والرموز */
-.q-box, .member-card, .btn, .c-box, .btn-download-center {
+.q-box, .member-card, .btn, .c-box, .btn-download-center, .drive-embed-container {
     transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) !important;
 }
 .q-box:hover, .member-card:hover, .c-box:hover {
@@ -211,7 +211,7 @@ body {
 .about-box { border-right: 6px solid var(--academic-blue); }
 .about-box h3, .feature-card h4 { color: var(--academic-blue); margin-bottom: 12px; font-weight: 700; }
 
-/* تنسيق قسم مركز التحميل المضاف حديثاً */
+/* تنسيق قسم المكتبة الرقمية المطور (تضمين جوجل درايف الحي) */
 .download-center-section {
     background-color: #f8fafc;
     text-align: center;
@@ -222,21 +222,22 @@ body {
     color: #475569;
     font-weight: 600;
 }
-.btn-download-center {
-    background-color: var(--academic-blue) !important;
-    color: white !important;
-    padding: 16px 40px !important;
-    font-size: 1.2rem !important;
-    font-weight: 700 !important;
-    border-radius: 8px !important;
-    box-shadow: 0 5px 15px rgba(2, 132, 199, 0.25) !important;
-    text-decoration: none;
-    display: inline-block;
+.drive-embed-container {
+    max-width: 950px;
+    margin: 0 auto;
+    border: 3px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+    background: #ffffff;
 }
-.btn-download-center:hover {
-    background-color: #0369a1 !important;
-    transform: translateY(-4px) !important;
-    box-shadow: 0 8px 25px rgba(2, 132, 199, 0.35) !important;
+.drive-iframe {
+    border: none;
+    display: block;
+}
+.drive-embed-container:hover {
+    border-color: var(--academic-blue);
+    box-shadow: 0 12px 35px rgba(2, 132, 199, 0.12) !important;
 }
 
 /* مستويات سكوباس وتصاميمها */
@@ -261,7 +262,7 @@ body {
     width: auto !important; 
     max-width: 95% !important;
     object-fit: contain !important;
-    filter: none !important;    
+    filter: none !important;      
 }
 .q1 { background-color: #0284c7; }
 .q2 { background-color: #0ea5e9; }
@@ -311,4 +312,5 @@ body {
     .hero-buttons { flex-direction: column; align-items: center; }
     .btn { width: 100%; max-width: 300px; }
     .ads-box { flex-direction: column; text-align: center; }
+    .drive-embed-container { height: 450px; }
 }
