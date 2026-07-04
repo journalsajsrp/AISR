@@ -9,7 +9,6 @@
 </head>
 <body>
 
-    <!-- الشريط العلوي للتواصل -->
     <div class="top-bar">
         <div class="container top-bar-flex">
             <span>المؤسسة الدولية للنشر العلمي (ISPF)</span>
@@ -20,7 +19,6 @@
         </div>
     </div>
 
-    <!-- الهيدر الرئيسي -->
     <header class="main-header">
         <div class="container header-flex">
             <button class="hamburger-menu" onclick="toggleMenu()" aria-label="قائمة التنقل">
@@ -28,7 +26,6 @@
             </button>
             <div class="logo-container">
                 <a href="#">
-                    <!-- تم تحديث اسم الصورة هنا لتطابق اسم ملفك الجديد تماماً -->
                     <img src="./pageHeaderTitleImage_ar.png" alt="المؤسسة الدولية للنشر العلمي" class="site-logo">
                 </a>
             </div>
@@ -47,7 +44,6 @@
         </div>
     </header>
 
-    <!-- 1. الواجهة الرئيسية (Hero Section) -->
     <section class="hero-section">
         <div class="container">
             <h2>المؤسسة الدولية للنشر العلمي</h2>
@@ -60,7 +56,6 @@
         </div>
     </section>
 
-    <!-- 2. نافذة إعلاناتنا اليومية (موقعها الجديد: أسفل الرئيسية وقبل من نحن) -->
     <section class="ads-section">
         <div class="container">
             <div class="ads-box">
@@ -72,7 +67,6 @@
         </div>
     </section>
 
-    <!-- 3. قسم من نحن والنشأة والتوجهات -->
     <section class="about-section" id="about">
         <div class="container">
             <div class="about-grid">
@@ -104,7 +98,6 @@
         </div>
     </section>
 
-    <!-- قسم النشر في سكوباس -->
     <section class="scopus-section" id="scopus">
         <div class="container">
             <h2 class="section-title">✨ النشر في سكوباس (Scopus)</h2>
@@ -146,20 +139,19 @@
         </div>
     </section>
 
-    <!-- 4. قسم المكتبة الرقمية المضاف حديثاً المرتبط برابط جوجل درايف العام للمدير والزوار -->
     <section class="download-center-section" id="library">
         <div class="container">
             <h2 class="section-title">📚 المكتبة الرقمية ومركز تحميل الملفات</h2>
             <p class="library-desc">
-                هنا تجدون أحدث المجلات العلمية المتاحة، شروط النشر المحدثة، الأدلة الأكاديمية، والنماذج المرفوعة مباشرة من الإدارة للتحميل المباشر.
+                تصفح وحمل أحدث المجلات العلمية، شروط النشر المحدثة، الأدلة الأكاديمية، والنماذج المرفوعة مباشرة من الإدارة:
             </p>
-            <a href="https://drive.google.com/drive/folders/1HhS77RlgNc7ymuzaKCGSAu6IIm3qxuwm?usp=sharing" target="_blank" class="btn btn-download-center">
-                📂 فتح مركز التحميل واستعراض الملفات الآن
-            </a>
+            
+            <div class="drive-embed-container">
+                <iframe src="https://drive.google.com/embeddedfolderview?id=1HhS77RlgNc7ymuzaKCGSAu6IIm3qxuwm#grid" width="100%" height="520" frameborder="0" class="drive-iframe"></iframe>
+            </div>
         </div>
     </section>
 
-    <!-- قسم الإدارة وفريق العمل -->
     <section class="team-section" id="team">
         <div class="container">
             <h2 class="section-title">👥 إدارة المؤسسة وفريق العمل</h2>
@@ -199,7 +191,6 @@
         </div>
     </section>
 
-    <!-- قسم الاعتمادات والروابط الدولية للمؤسسة -->
     <section class="partners-section" id="partners">
         <div class="container">
             <h2 class="section-title">🤝 الاعتمادات والروابط الدولية للمؤسسة</h2>
@@ -233,7 +224,6 @@
         </div>
     </section>
 
-    <!-- قسم التواصل السريع -->
     <section class="contact-section" id="contact">
         <div class="container">
             <h2 class="section-title">📞 تواصل معنا الآن</h2>
@@ -257,7 +247,7 @@
         <div class="container">
             <p>&copy; 2026 جميع الحقوق محفوظة للمؤسسة الدولية للنشر العلمي (ISPF).</p>
         </div>
-    </footer
+    </footer>
 
     <script src="./script.js"></script>
 </body>
